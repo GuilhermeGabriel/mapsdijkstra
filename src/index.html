@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MapsDijkstra by: Guilherme Gabriel</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="content"></div>
+
+      <div class="menu-right">
+        <label>Ponto de partida:</label>
+        <select id="pontodechegada">
+          <option value="0">AM</option>
+          <option value="1">Saab</option>
+        </select>
+
+        <label>Ponto de chegada:</label>
+        <select id="pontodechegada">
+          <option value="0">SP</option>
+          <option value="1">Saab</option>
+        </select>
+
+        <button class="btn-find">Encontrar menor rota!</button>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
