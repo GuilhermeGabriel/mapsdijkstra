@@ -2,6 +2,7 @@ html,
 body,
 #container {
   display: flex;
+  justify-content: space-between;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   width: 100%;
@@ -10,15 +11,19 @@ body,
 }
 
 #content {
-  flex: 1;
   background: #eee;
 }
 
+img {
+  width: 861px;
+  height: 100%;
+}
+
 .menu-right {
-  flex: 0.5;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  background: #ccc;
+  background: #bbb;
   padding: 16px;
 }
 

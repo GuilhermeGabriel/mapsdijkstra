@@ -7,8 +7,9 @@ if (require('electron-squirrel-startup')) {
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
-    width: 960,
-    height: 480,
+    width: 1160,
+    height: 405,
+    resizable: false,
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
