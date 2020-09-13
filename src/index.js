@@ -10,6 +10,9 @@ const createWindow = () => {
     width: 1160,
     height: 405,
     resizable: false,
+    webPreferences: {
+      nodeIntegration: true,
+    },
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
