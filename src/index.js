@@ -13,6 +13,7 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true,
     },
+    icon: path.join(__dirname, 'assets', 'icon.png'),
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));

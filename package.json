@@ -1,9 +1,10 @@
 {
-  "name": "nesodijkstra",
-  "productName": "nesodijkstra",
+  "name": "mapsdijkstra",
+  "productName": "mapsdijkstra",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Dado dois pontos em um grafo, encontra o menor percurso e distancia entre eles",
   "main": "src/index.js",
+  "license": "Private",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -16,7 +17,6 @@
     "name": "GuilhermeGabriel",
     "email": "guilhermegabriel90@gmail.com"
   },
-  "license": "MIT",
   "config": {
     "forge": {
       "packagerConfig": {},
