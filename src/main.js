@@ -1,4 +1,5 @@
 const Graph = require('node-dijkstra');
+
 const startSelect = document.getElementById('pontodepartida');
 const finishSelect = document.getElementById('pontodechegada');
 const btnFind = document.getElementById('btn-find');
@@ -8,6 +9,7 @@ const infoCaminho = document.getElementById('info-caminho');
 const infoKm = document.getElementById('info-km');
 
 const route = new Graph();
+
 /*
 a 0 araguari
 b 1 cascalhorico
@@ -25,7 +27,7 @@ m 12 saojuliana
 n 13 tupaciguara
 o 14 uberlandia
 */
-//route.addNode('i', { b: 3, a: 6 });
+
 route.addNode('araguari', {
   uberlandia: 30,
   estreladosul: 34,
@@ -78,7 +80,6 @@ route.addNode('uberlandia', {
 const canvas = document.getElementById('canvas');
 canvas.width = 851;
 canvas.height = 395;
-//canvas.style.border = 'red solid 5px';
 const ctx = canvas.getContext('2d');
 
 const locations = {
@@ -98,16 +99,6 @@ const locations = {
   tupaciguara: [403, 113],
   uberlandia: [561, 238],
 };
-
-/*
-for (let city in position) {
-  var radius = 12;
-  ctx.beginPath();
-  ctx.arc(position[city][0], position[city][1], radius, 0, 2 * Math.PI, false);
-  ctx.fillStyle = 'green';
-  ctx.fill();
-  ctx.lineWidth = 5;
-}*/
 
 btnFind.addEventListener('click', () => {
   const startSelected = startSelect.options[startSelect.selectedIndex];
